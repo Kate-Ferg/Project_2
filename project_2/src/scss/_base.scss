@@ -14,6 +14,9 @@
   box-sizing: border-box;
   font-family: "Gayathri", sans-serif;
 }
+.button:hover {
+  background-color: gray;
+}
 .closing {
   margin-top: 65px;
   margin-bottom: 20px;
@@ -96,6 +99,10 @@ img {
   width: 200px;
   height: 200px;
   margin-bottom: 20px;
+}
+.logo:hover {
+  width: 300px;
+  height: 300px;
 }
 .lyrical {
   width: 400px;
