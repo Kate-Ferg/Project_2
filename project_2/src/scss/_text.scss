@@ -1,0 +1,76 @@
+$font-stack: "Playfair Display", serif;
+$font-stack-two: "Gayathri", sans-serif;
+$font-stack-three: "Dancing Script", cursive;
+@mixin weight {
+  font-weight: 700;
+} 
+@mixin size {
+  @include weight;
+  font-size: 1.7rem;
+} 
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+footer {
+  background-color: black;
+  height: 133px;
+  width: 1200px;
+  display: block;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: $font-stack;
+  @include weight;
+  font-size: 1.4rem;
+  text-align: center;
+}
+h1 {
+  font-family: $font-stack-three;
+  color: white;
+  @include weight;
+  font-size: 7rem;
+  line-height: 1rem;
+  margin-top: -230px;
+  margin-left: 15px;
+}
+h2 {
+  font-family: $font-stack-two;
+  color: rgb(154, 17, 63);
+  @include weight;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  margin: 0 0 9px;
+}
+h3 {
+  font-family: $font-stack-two;
+  color: tan;
+  @include size;
+  line-height: 2rem;
+  margin: 0 0 9px;
+}
+.tagline {
+  font-family: $font-stack-two;
+  @include weight;
+  font-size: 1.5rem;
+  color: gray;
+  position: absolute;
+  letter-spacing: 3px;
+}
+.lead {
+  margin: 0 0 10px;
+  font-family: $font-stack;
+  @include size;
+  line-height: 2rem;
+}
+.list-title {
+  margin-top: 20px;
+  margin-bottom: -8px;
+}
+p {
+  margin: 0 0 10px;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}

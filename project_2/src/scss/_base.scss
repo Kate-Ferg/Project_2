@@ -1,0 +1,130 @@
+.button {
+  display: block;
+  width: 138px;
+  height: 40px;
+  background-color: rgb(154, 17, 63);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 13px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  font-family: "Gayathri", sans-serif;
+}
+.closing {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 435px;
+  margin-right: 420px;
+  text-align: center;
+}
+.CTA {
+  margin-right: 531px;
+}
+.dances {
+  list-style: none;
+  display: block;
+  margin-bottom: 60px;
+  height: 350px;
+  width: 260px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+.end_action {
+  margin-left: 540px;
+  margin-bottom: 100px;
+}
+.facebook {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.features {
+  margin: 0;
+  display: flex;
+}
+.group {
+  width: 400px;
+  height: 270px;
+  float: left;
+  margin-right: 40px;
+  margin-left: 120px;
+}
+header {
+  background-image: url("images/header.jpg");
+  background-size: 1200px 600px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 452px;
+  width: 1200px;
+  padding-top: 310px;
+  padding-left: 535px;
+  margin-bottom: 100px;
+}
+.home-page {
+  justify-content: space-around;
+  width: 1200px;
+  flex-flow: row wrap;
+}
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.insta {
+  width: 20px;
+  height: 20px;
+}
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  margin-right: 120px;
+  width: 460px;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.lyrical {
+  width: 400px;
+  height: 260px;
+  float: left;
+  margin-right: 40px;
+  margin-left: 170px;
+}
+main {
+  margin-top: 41px;
+}
+.org-ops {
+  margin-top: 65px;
+  margin-right: 220px;
+  margin-left: 220px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.social {
+  width: 1200px;
+  display: flex;
+  margin-left: 443px;
+  padding-top: 40px;
+}
+.styles {
+  display: block;
+  margin-bottom: 11px;
+  height: 173px;
+  width: 260px;
+}
