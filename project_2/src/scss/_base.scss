@@ -1,9 +1,24 @@
-.button {
+@use 'text';
+@mixin wrap {
+  flex-flow: row wrap;
+}
+@mixin flex {
+  display: flex;
+}
+@mixin flex-wrap {
+  @include wrap;
+  @include flex;
+}
+@mixin block {
   display: block;
+}
+
+.button {
+  @include block;
   width: 138px;
   height: 40px;
-  background-color: rgb(154, 17, 63);
-  color: #ffffff;
+  background-color: $primary-color;
+  color: $tertiary-color;
   font-weight: 700;
   font-size: 1.4rem;
   text-decoration: none;
@@ -15,12 +30,12 @@
   font-family: "Gayathri", sans-serif;
 }
 .button:hover {
-  background-color: gray;
+  background-color: $secondary-color;
 }
 .closing {
   margin-top: 65px;
   margin-bottom: 20px;
-  flex-flow: row wrap;
+  @include wrap;
   justify-content: center;
   margin-left: 435px;
   margin-right: 420px;
@@ -31,11 +46,11 @@
 }
 .dances {
   list-style: none;
-  display: block;
+  @include block;
   margin-bottom: 60px;
   height: 350px;
   width: 260px;
-  flex-flow: row wrap;
+  @include wrap;
   justify-content: space-between;
   padding: 40px;
 }
@@ -73,7 +88,7 @@ header {
 .home-page {
   justify-content: space-around;
   width: 1200px;
-  flex-flow: row wrap;
+  @include wrap;
 }
 html {
   font-size: 10px;
@@ -88,8 +103,7 @@ img {
   height: 20px;
 }
 .intro {
-  display: flex;
-  flex-flow: row wrap;
+  @include flex-wrap;
   margin-left: 40px;
   margin-bottom: 60px;
   margin-right: 120px;
@@ -119,18 +133,17 @@ main {
   margin-right: 220px;
   margin-left: 220px;
   margin-bottom: 60px;
-  display: flex;
-  flex-flow: row wrap;
+  @include flex wrap;
   justify-content: center;
 }
 .social {
   width: 1200px;
-  display: flex;
+  @include flex;
   margin-left: 443px;
   padding-top: 40px;
 }
 .styles {
-  display: block;
+  @include block;
   margin-bottom: 11px;
   height: 173px;
   width: 260px;
