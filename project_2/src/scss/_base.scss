@@ -133,7 +133,7 @@ main {
   margin-right: 220px;
   margin-left: 220px;
   margin-bottom: 60px;
-  @include flex wrap;
+  @include flex-wrap;
   justify-content: center;
 }
 .social {
