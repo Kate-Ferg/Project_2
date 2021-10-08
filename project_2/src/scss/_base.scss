@@ -124,17 +124,15 @@ img {
   float: left;
   margin-right: 40px;
   margin-left: 170px;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-name: slidein;
 }
 @keyframes slidein {
   from {
-    margin-right: 100%;
-    width: 100%;
+    margin-right: 0px;
   }
   to {
-    margin-right: 0%;
-    width: 100%;
+    margin-right: 40px;
   }
 }
 main {
