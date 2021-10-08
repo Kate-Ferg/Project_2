@@ -125,18 +125,18 @@ img {
   float: left;
   margin-right: 40px;
   margin-left: 170px;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 @keyframes slidein {
   from {
-    margin-left: -250px;
+    margin-left: -300px;
     margin-right: 510px;
   }
   to {
-    margin-left: 120px;
+    margin-left: 170px;
     margin-right: 40px;
    transform: scaleX(-1);
   }
