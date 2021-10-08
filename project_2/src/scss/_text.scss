@@ -36,7 +36,7 @@ h1 {
   line-height: 1rem;
   margin-top: -230px;
   margin-left: 15px;
-  animation-duration: 3s;
+  animation-duration: 15s;
   animation-name: slidein;
   animation-iteration-count: infinite;
 }
@@ -47,7 +47,7 @@ h1 {
   }
 
   to {
-    margin-left: 0%;
+    margin-left: 10%;
     width: 100%;
   }
 }
