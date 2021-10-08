@@ -130,9 +130,11 @@ img {
 @keyframes slidein {
   from {
     margin-left: -300px;
+    margin-right: 300px;
   }
   to {
-    margin-left: 190px;
+    margin-left: 180px;
+    margin-right: 40px
   }
 }
 main {
