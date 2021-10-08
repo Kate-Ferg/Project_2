@@ -129,10 +129,14 @@ img {
 }
 @keyframes slidein {
   from {
-    margin-left: -1400px;
+    margin-left: -140px;
+  }
+  15% {
+    font-size: 110%;
+    width: 110%;
   }
   to {
-    margin-left: 80px;
+    margin-left: 120px;
   }
 }
 main {
