@@ -134,12 +134,12 @@ img {
   from {
     margin-left: -300px;
     margin-right: 510px;
-    transform: rotate(0deg);
+    transform: scaleY(0);
   }
   to {
     margin-left: 170px;
     margin-right: 40px;
-    transform: rotate(180deg);
+   transform: scaleY(-180);
   }
 }
 main {
