@@ -36,6 +36,9 @@ h1 {
   line-height: 1rem;
   margin-top: -230px;
   margin-left: 15px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
 }
 h2 {
   font-family: $font-stack-two;
