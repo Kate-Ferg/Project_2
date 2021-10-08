@@ -37,10 +37,10 @@ h1 {
   margin-top: -230px;
   margin-left: 15px;
   animation-duration: 15s;
-  animation-name: slidein;
+  animation-name: bounce;
   animation-iteration-count: infinite;
 }
-@keyframes slidein {
+@keyframes bounce {
   from {
     margin-left: 100%;
     width: 300%;
