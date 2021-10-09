@@ -7,11 +7,13 @@ $font-stack-three: "Dancing Script", cursive;
 @mixin size {
   @include weight;
   font-size: 1.7rem;
-} 
-
+}  
 a {
   color: gray;
   text-decoration: none;
+}
+.action {
+  width: 400px;
 }
 footer {
   background-color: black;
