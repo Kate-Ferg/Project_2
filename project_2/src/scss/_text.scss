@@ -46,7 +46,8 @@ h2 {
   @include weight;
   font-size: 2.3rem;
   line-height: 4rem;
-  margin: -40 0 9px;
+  margin: 0 0 9px;
+  margin-left: -460px;
 }
 h3 {
   font-family: $font-stack-two;
@@ -72,6 +73,7 @@ h3 {
 .list-title {
   margin-top: 20px;
   margin-bottom: -8px;
+  margin-left: -610px;
 }
 p {
   margin: 0 0 10px;
