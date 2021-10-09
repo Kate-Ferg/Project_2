@@ -133,6 +133,7 @@ img {
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-delay: 2s;
 }
 @keyframes slidein {
   from {
@@ -143,7 +144,6 @@ img {
     margin-left: 170px;
     margin-right: 40px;
     transform: scaleX(-1);
-    animation-delay: 2s;
   }
 }
 main {
