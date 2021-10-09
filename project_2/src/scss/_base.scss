@@ -12,6 +12,9 @@
 @mixin block {
   display: block;
 }
+@mixin bottom {
+  margin-bottom: 100px;
+}
 
 .button {
   @include block;
@@ -56,7 +59,7 @@
 }
 .end_action {
   margin-left: 540px;
-  margin-bottom: 100px;
+  @include bottom;
 }
 .facebook {
   width: 20px;
@@ -84,7 +87,7 @@ header {
   width: 1200px;
   padding-top: 310px;
   padding-left: 535px;
-  margin-bottom: 100px;
+  @include bottom;
 }
 .home-page {
   justify-content: space-around;
