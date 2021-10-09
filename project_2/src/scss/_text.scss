@@ -47,16 +47,16 @@ h2 {
   font-family: $font-stack-two;
   color: $primary-color;
   @include weight;
-  font-size: 4rem;
-  line-height: 2.9rem;
+  font-size: 3rem;
+  line-height: 4rem;
   margin: 0 0 9px;
-  margin-left: -440px;
+  margin-left: -370px;
 }
 h3 {
   font-family: $font-stack-two;
   color: $secondary-color;
-  @include size;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   margin: 0 0 9px;
 }
 .tagline {
@@ -76,7 +76,7 @@ h3 {
 .list-title {
   margin-top: 30px;
   margin-bottom: -4px;
-  margin-left: -610px;
+  margin-left: -576px;
 }
 p {
   margin: 0 0 10px;
