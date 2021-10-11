@@ -1,10 +1,28 @@
-.button {
+@use 'text';
+@mixin wrap {
+  flex-flow: row wrap;
+}
+@mixin flex {
+  display: flex;
+}
+@mixin flex-wrap {
+  @include wrap;
+  @include flex;
+}
+@mixin block {
   display: block;
+}
+@mixin bottom {
+  margin-bottom: 100px;
+}
+
+.button {
+  @include block;
   width: 138px;
   height: 40px;
-  background-color: rgb(154, 17, 63);
-  color: #ffffff;
-  font-weight: 700;
+  background-color: $primary-color;
+  color: $tertiary-color;
+  @include weight;
   font-size: 1.4rem;
   text-decoration: none;
   text-align: center;
@@ -12,12 +30,15 @@
   margin-bottom: 15px;
   margin-top: 20px;
   box-sizing: border-box;
-  font-family: "Gayathri", sans-serif;
+  font-family: $font-stack-two;
+}
+.button:hover {
+  background-color: $secondary-color;
 }
 .closing {
   margin-top: 65px;
   margin-bottom: 20px;
-  flex-flow: row wrap;
+  @include wrap;
   justify-content: center;
   margin-left: 435px;
   margin-right: 420px;
@@ -28,22 +49,23 @@
 }
 .dances {
   list-style: none;
-  display: block;
+  @include block;
   margin-bottom: 60px;
   height: 350px;
   width: 260px;
-  flex-flow: row wrap;
+  @include wrap;
   justify-content: space-between;
   padding: 40px;
 }
 .end_action {
   margin-left: 540px;
-  margin-bottom: 100px;
+  @include bottom;
 }
 .facebook {
   width: 20px;
   height: 20px;
   margin-left: 5px;
+  margin-right: 5px;
 }
 .features {
   margin: 0;
@@ -65,12 +87,12 @@ header {
   width: 1200px;
   padding-top: 310px;
   padding-left: 535px;
-  margin-bottom: 100px;
+  @include bottom;
 }
 .home-page {
   justify-content: space-around;
   width: 1200px;
-  flex-flow: row wrap;
+  @include wrap;
 }
 html {
   font-size: 10px;
@@ -85,8 +107,7 @@ img {
   height: 20px;
 }
 .intro {
-  display: flex;
-  flex-flow: row wrap;
+  @include flex-wrap;
   margin-left: 40px;
   margin-bottom: 60px;
   margin-right: 120px;
@@ -95,14 +116,34 @@ img {
 .logo {
   width: 200px;
   height: 200px;
+  margin-bottom: 70px;
+}
+.logo:hover {
+  width: 250px;
+  height: 250px;
   margin-bottom: 20px;
 }
 .lyrical {
-  width: 400px;
+  width: 300px;
   height: 260px;
   float: left;
   margin-right: 40px;
   margin-left: 170px;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: -300px;
+    margin-right: 510px;
+  }
+  to {
+    margin-left: 170px;
+    margin-right: 40px;
+    transform: scaleX(-1);
+  }
 }
 main {
   margin-top: 41px;
@@ -112,18 +153,17 @@ main {
   margin-right: 220px;
   margin-left: 220px;
   margin-bottom: 60px;
-  display: flex;
-  flex-flow: row wrap;
+  @include flex-wrap;
   justify-content: center;
 }
 .social {
   width: 1200px;
-  display: flex;
+  @include flex;
   margin-left: 443px;
   padding-top: 40px;
 }
 .styles {
-  display: block;
+  @include block;
   margin-bottom: 11px;
   height: 173px;
   width: 260px;

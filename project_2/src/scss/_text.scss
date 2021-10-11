@@ -1,16 +1,30 @@
 $font-stack: "Playfair Display", serif;
 $font-stack-two: "Gayathri", sans-serif;
 $font-stack-three: "Dancing Script", cursive;
+$primary-color: rgb(154, 17, 63);
+$secondary-color: tan;
+$tertiary-color: #ffffff;
 @mixin weight {
   font-weight: 700;
 } 
 @mixin size {
   @include weight;
   font-size: 1.7rem;
-}  
+} 
+@mixin line {
+  line-height: 2rem;
+} 
 a {
   color: gray;
   text-decoration: none;
+}
+.action{
+  width: 400px;
+  margin-left: -20px;
+  line-height: 3rem;
+}
+.bullets {
+  margin-left: -26px;
 }
 footer {
   background-color: black;
@@ -18,7 +32,7 @@ footer {
   width: 1200px;
   display: block;
   box-sizing: border-box;
-  color: #ffffff;
+  color: $tertiary-color;
   font-family: $font-stack;
   @include weight;
   font-size: 1.4rem;
@@ -26,33 +40,39 @@ footer {
 }
 h1 {
   font-family: $font-stack-three;
-  color: white;
+  color: $tertiary-color;
   @include weight;
   font-size: 7rem;
   line-height: 1rem;
   margin-top: -230px;
   margin-left: 15px;
 }
+h1:hover {
+  @include line;
+  margin-top: -240px;
+  text-shadow: 4px 4px 6px $primary-color, 0 0 45px $tertiary-color, 0 0 30px $secondary-color;
+}
 h2 {
   font-family: $font-stack-two;
-  color: rgb(154, 17, 63);
+  color: $primary-color;
   @include weight;
-  font-size: 2.3rem;
+  font-size: 3rem;
   line-height: 4rem;
   margin: 0 0 9px;
+  margin-left: -373px;
 }
 h3 {
   font-family: $font-stack-two;
-  color: tan;
-  @include size;
-  line-height: 2rem;
+  color: $secondary-color;
+  font-size: 2rem;
+  @include line;
   margin: 0 0 9px;
 }
 .tagline {
   font-family: $font-stack-two;
   @include weight;
   font-size: 1.5rem;
-  color: gray;
+  color: $secondary-color;
   position: absolute;
   letter-spacing: 3px;
 }
@@ -60,16 +80,19 @@ h3 {
   margin: 0 0 10px;
   font-family: $font-stack;
   @include size;
-  line-height: 2rem;
+  @include line;
 }
 .list-title {
+  margin-top: 40px;
+  margin-left: -576px;
+}
+.others {
   margin-top: 20px;
-  margin-bottom: -8px;
 }
 p {
   margin: 0 0 10px;
   font-family: $font-stack;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 2rem;
+  @include line;
 }
